@@ -16,7 +16,7 @@ function genRandom(){
 
 function init(){
     const randomNumber = genRandom();
+    //const randomNumber = 3;
     paintImage(randomNumber);
 }
-
 init();

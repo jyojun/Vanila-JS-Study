@@ -11,7 +11,8 @@ function getWeather(lat, lon){
         //console.log(json);
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        weather.innerHTML = `<p>현재 기온: ${temperature}°C</p>
+        <p>현재 위치: ${place}</p>`;
     });
     //fetch를 기다리지 않고 다음작업을 지시하면 fetch가 정상적으로 작동 x 할수있음
 }
